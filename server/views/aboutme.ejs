@@ -1,0 +1,45 @@
+<%- include('partials/header', { title: 'About Me' }) %>
+
+<style>
+    .media-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; 
+    }
+    .media-container img,
+    .media-container video {
+        width: 408px;
+        height: 512px;
+    }
+    article h1 {
+        text-align: center;
+    }
+    article p {
+        text-align: justify;
+        max-width: 800px; 
+        margin: auto; 
+    }
+</style>
+
+<div class="sticky-footer-wrapper">
+    <div class="sticky-footer-content">
+        <article>
+            <h1>Who Am I?</h1>
+            <p> 
+            Hello! My name is Tariq Ahmed. Im a 3rd year university student studying at Ontariotech University.
+            </p>
+        </article>
+
+        <div class="media-container">
+            <img src="/assets/images/IMG_7962.jpg" alt="My Picture">
+                <source src="/assets/videos/IMG_0.MOV" type="video/MOV">
+            </video>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+<%- include('partials/footer') %>
